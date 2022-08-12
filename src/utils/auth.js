@@ -30,7 +30,7 @@ class Auth {
         email: email, 
         password: password})
     })
-    .then(response => response.json())
+    .then(this._checkResponse)
   }
 
   checkToken (token) {

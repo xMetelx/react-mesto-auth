@@ -17,10 +17,6 @@ const Card = (props) => {
     props.delete(props.card)
   }
 
-
-  // определить владельца карточки
-  // console.log("isown" + props.card.owner._id);
-  // console.log("CU-ID" + currentUser._id);
   const isOwn = props.card.owner._id === currentUser._id;
   
   // назначить кнопку удаления через className
